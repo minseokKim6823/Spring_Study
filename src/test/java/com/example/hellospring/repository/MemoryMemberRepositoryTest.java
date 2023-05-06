@@ -11,11 +11,10 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.*;
 
 public class MemoryMemberRepositoryTest {
-
     MemoryMemberRepository repository = new MemoryMemberRepository();
     @AfterEach
     public void afterEach(){
-        repository.clearStore();
+        repository.clearStore();//메서드가 끝날 때마다 저장소를 지워줌
     }
     @Test
     public void save(){
