@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
     @GetMapping("/")
     public String home(){
-        return "home";//index.html 무시되고 바로 home.html
+        return "home"; //index.html 무시되고 바로 home.html
     }
 }
